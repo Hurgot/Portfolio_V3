@@ -1,0 +1,32 @@
+{
+    "about": "Bonjour ! Je suis étudiant en BTS Services Informatiques aux Organisations (SIO). Passionné par le développement web et les technologies, j'aime créer des applications utiles et innovantes. Ce portfolio présente mes projets et compétences acquises durant ma formation.",
+    "skills": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Python",
+        "SQL",
+        "Git",
+        "React",
+        "Node.js"
+    ],
+    "projects": [
+        {
+            "title": "Site Web Personnel",
+            "description": "Un portfolio simple en HTML/CSS/JS pour présenter mes travaux.",
+            "image": "images/portfolio.jpg",
+            "link": "#"
+        },
+        {
+            "title": "Application de Gestion",
+            "description": "Une app web pour gérer des tâches avec une base de données.",
+            "image": "images/gestion.jpg",
+            "link": "#"
+        }
+    ],
+    "contact": {
+        "email": "votre.email@example.com",
+        "linkedin": "https://www.linkedin.com/in/votreprofil",
+        "github": "https://github.com/votreusername"
+    }
+}
