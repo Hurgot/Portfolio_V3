@@ -1,14 +1,12 @@
 {
     "about": "Bonjour ! Je suis étudiant en BTS Services Informatiques aux Organisations (SIO). Passionné par le développement web et les technologies, j'aime créer des applications utiles et innovantes. Ce portfolio présente mes projets et compétences acquises durant ma formation.",
     "skills": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Python",
+        "HTML",
+        "CSS",
+        "PHP",
         "SQL",
         "Git",
-        "React",
-        "Node.js"
+        "C#"
     ],
     "projects": [
         {

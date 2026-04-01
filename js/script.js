@@ -106,9 +106,9 @@ document.addEventListener('DOMContentLoaded', function() {
         "skills": [
             "HTML",
             "CSS",
-            "C#",
-            "Python",
+            "PHP",
             "SQL",
+            "Git"
         ],
         "projects": [
             {
