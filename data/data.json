@@ -18,6 +18,12 @@
             "link": "#"
         },
         {
+            "title": "Framework Laravel",
+            "description": "Un projet de développement d'une application web avec Laravel.",
+            "image": "images/Laravel_2.png",
+            "link": "#"
+        },
+        {
             "title": "Certification RGPD",
             "description": "Certification réalisée lors de ma première année de BTS",
             "image": "images/Certification_RGPD.jpg",
