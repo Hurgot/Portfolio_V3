@@ -101,7 +101,7 @@ let screenshotsData = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-    const data = {
+    const fallbackData = {
         "about": "Bonjour ! Je suis étudiant en BTS Services Informatiques aux Organisations (SIO). Passionné par le développement web et les technologies, j'aime créer des applications utiles et innovantes. Ce portfolio présente mes projets et compétences acquises durant ma formation.",
         "skills": [
             "HTML",
@@ -143,7 +143,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Modal Elements
+    function initPortfolio(data) {
+        // Modal Elements
     const modal = document.getElementById('projectModal');
     const closeBtn = document.querySelector('.modal-close');
     const screenshotInput = document.getElementById('screenshotInput');
@@ -377,4 +378,14 @@ document.addEventListener('DOMContentLoaded', function() {
         <p>LinkedIn: <a href="${data.contact.linkedin}" target="_blank">Profil LinkedIn</a></p>
         <p>GitHub: <a href="${data.contact.github}" target="_blank">Profil GitHub</a></p>
     `;
+    }
+
+    // Récupérer data depuis JSON si possible sinon fallback
+    fetch('data/data.json')
+        .then(response => response.json())
+        .then(jsonData => initPortfolio(jsonData))
+        .catch(error => {
+            console.warn('Impossible de charger data/data.json, fallback utilisé', error);
+            initPortfolio(fallbackData);
+        });
 });

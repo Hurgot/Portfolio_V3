@@ -22,6 +22,12 @@
             "description": "Une app web pour gérer des tâches avec une base de données.",
             "image": "images/gestion.jpg",
             "link": "#"
+        },
+        {
+            "title": "GLPI",
+            "description": "Création de tickets de support",
+            "image": "",
+            "link": "#"
         }
     ],
     "contact": {
