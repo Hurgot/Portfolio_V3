@@ -29,7 +29,6 @@
                 <h1 class="hero-title">Hugo Boudet</h1>
                 <p class="hero-subtitle">Développeur BTS SIO</p>
                 <p class="hero-description">Créateur de solutions web innovantes</p>
-                <a href="#projects" class="cta-button">Voir mes projets</a>
             </div>
         </section>
         <section id="about" class="section">
@@ -62,6 +61,43 @@
     <footer class="footer">
         <p>&copy; 2026 Hugo Boudet - Portfolio BTS SIO</p>
     </footer>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Captures d'écran</h3>
+                    <div class="screenshots-container" id="screenshotsContainer"></div>
+                    <label class="upload-btn">
+                        <span>📷 Ajouter une capture</span>
+                        <input type="file" id="screenshotInput" accept="image/*" style="display: none;">
+                    </label>
+                </div>
+                <div class="modal-section">
+                    <h3>Description du projet</h3>
+                    <textarea id="projectDescription" placeholder="Écrivez une explication sur ce projet..." rows="6"></textarea>
+                    <button class="save-btn" id="saveBtnDescription">Sauvegarder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screenshot Lightbox -->
+    <div id="screenshotLightbox" class="screenshot-lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev">❮</button>
+            <img id="lightboxImage" src="" alt="Screenshot en grand">
+            <button class="lightbox-next">❯</button>
+            <div class="lightbox-counter"><span id="currentSlide">1</span> / <span id="totalSlides">1</span></div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
