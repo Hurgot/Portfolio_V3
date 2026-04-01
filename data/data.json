@@ -14,13 +14,13 @@
         {
             "title": "Site Web Personnel",
             "description": "Un portfolio simple en HTML/CSS/JS pour présenter mes travaux.",
-            "image": "images/Laravel_1.png",
+            "image": "",
             "link": "#"
         },
         {
-            "title": "Application de Gestion",
-            "description": "Une app web pour gérer des tâches avec une base de données.",
-            "image": "images/Laravel_2.png",
+            "title": "Certification RGPD",
+            "description": "Certification réalisée lors de ma première année de BTS",
+            "image": "images/Certification_RGPD.jpg",
             "link": "#"
         },
         {

@@ -69,11 +69,11 @@ window.addEventListener('load', () => {
 // Variables globales pour les screenshots
 let screenshotsData = {
   "0": {
-    "description": "",
+    "description": "Site Web Personnel",
     "images": []
   },
   "1": {
-    "description": "",
+    "description": "Framework Laravel",
     "images": [
         "images/Laravel_1.png",
         "images/Laravel_2.png",
@@ -84,13 +84,13 @@ let screenshotsData = {
     ]
   },
   "2": {
-    "description": "",
+    "description": "Certification RGPD",
     "images": [
         "images/Certification_RGPD.jpg"
     ]
   },
   "3": {
-    "description": "",
+    "description": "GLPI",
     "images": [
         "images/GLPI_1.png",
         "images/GLPI_2.png",
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 "title": "Site Web Personnel",
                 "description": "Un portfolio simple en HTML/CSS/JS pour présenter mes travaux.",
-                "image": "images/Laravel_1.png",
+                "image": "",
                 "link": "#"
             },
             {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 "title": "Certification RGPD",
                 "description": "Certification réalisée lors de ma première année de BTS",
-                //"image": "https://picsum.photos/400/300?random=3",
+                "image": "images/Certification_RGPD.jpg",
                 "link": "#"
             },
             {
