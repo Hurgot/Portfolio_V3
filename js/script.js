@@ -66,6 +66,40 @@ window.addEventListener('load', () => {
     new LightningStrike();
 });
 
+// Variables globales pour les screenshots
+let screenshotsData = {
+  "0": {
+    "description": "",
+    "images": []
+  },
+  "1": {
+    "description": "",
+    "images": [
+        "images/Laravel_1.png",
+        "images/Laravel_2.png",
+        "images/Laravel_3.png",
+        "images/Laravel_4.png",
+        "images/Laravel_6.png",
+        "images/Laravel_7.png"
+    ]
+  },
+  "2": {
+    "description": "",
+    "images": [
+        "images/Certification_RGPD.jpg"
+    ]
+  },
+  "3": {
+    "description": "",
+    "images": [
+        "images/GLPI_1.png",
+        "images/GLPI_2.png",
+        "images/GLPI_3.png",
+        "images/GLPI_4.png"
+    ]
+  }
+};
+
 document.addEventListener('DOMContentLoaded', function() {
     const data = {
         "about": "Bonjour ! Je suis étudiant en BTS Services Informatiques aux Organisations (SIO). Passionné par le développement web et les technologies, j'aime créer des applications utiles et innovantes. Ce portfolio présente mes projets et compétences acquises durant ma formation.",
@@ -93,6 +127,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 "title": "Certification RGPD",
                 "description": "Certification réalisée lors de ma première année de BTS",
                 //"image": "https://picsum.photos/400/300?random=3",
+                "link": "#"
+            },
+            {
+                "title": "GLPI",
+                "description": "Création de tickets de support",
+                //"image": "https://picsum.photos/400/300?random=2",
                 "link": "#"
             }
         ],
@@ -124,17 +164,18 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentLightboxIndex = 0;
     let lightboxImages = [];
 
-    // Load saved data from localStorage
+    // Load saved data from screenshots.json
     function loadProjectData(index) {
-        const saved = localStorage.getItem(`project_${index}`);
-        if (saved) {
-            return JSON.parse(saved);
+        if (screenshotsData[index]) {
+            return screenshotsData[index];
         }
-        return { screenshots: [], description: '' };
+        return { images: [], description: '' };
     }
 
-    // Save project data to localStorage
+    // Save project data to screenshots.json (côté client, utilise une API pour persister)
     function saveProjectData(index, projectData) {
+        screenshotsData[index] = projectData;
+        // Garde aussi les données en localStorage pour la session actuelle
         localStorage.setItem(`project_${index}`, JSON.stringify(projectData));
     }
 
@@ -143,8 +184,8 @@ document.addEventListener('DOMContentLoaded', function() {
         screenshotsContainer.innerHTML = '';
         const projectData = loadProjectData(index);
         
-        if (projectData.screenshots && projectData.screenshots.length > 0) {
-            projectData.screenshots.forEach((screenshot, screenshotIndex) => {
+        if (projectData && projectData.images && projectData.images.length > 0) {
+            projectData.images.forEach((screenshot, screenshotIndex) => {
                 const screenshotItem = document.createElement('div');
                 screenshotItem.className = 'screenshot-item';
                 screenshotItem.innerHTML = `
@@ -162,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Delete screenshot
                 screenshotItem.querySelector('.screenshot-delete').addEventListener('click', function(e) {
                     e.preventDefault();
-                    projectData.screenshots.splice(screenshotIndex, 1);
+                    projectData.images.splice(screenshotIndex, 1);
                     saveProjectData(index, projectData);
                     displayScreenshots(index);
                 });
@@ -193,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lightbox functions
     function openLightbox(projectIndex, imageIndex) {
         const projectData = loadProjectData(projectIndex);
-        lightboxImages = projectData.screenshots || [];
+        lightboxImages = projectData.images || [];
         currentLightboxIndex = imageIndex;
         
         if (lightboxImages.length > 0) {
@@ -237,8 +278,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const reader = new FileReader();
             reader.onload = function(event) {
                 const projectData = loadProjectData(currentProjectIndex);
-                projectData.screenshots = projectData.screenshots || [];
-                projectData.screenshots.push(event.target.result);
+                projectData.images = projectData.images || [];
+                projectData.images.push(event.target.result);
                 saveProjectData(currentProjectIndex, projectData);
                 displayScreenshots(currentProjectIndex);
                 screenshotInput.value = '';

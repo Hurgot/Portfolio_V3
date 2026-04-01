@@ -1,8 +1,0 @@
-# Images (trop volumineuses pour Git)
-images/*
-!images/.gitkeep
-
-# Autres fichiers à ignorer
-*.log
-.DS_Store
-Thumbs.db
