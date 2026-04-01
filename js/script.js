@@ -80,19 +80,19 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 "title": "Site Web Personnel",
                 "description": "Un portfolio simple en HTML/CSS/JS pour présenter mes travaux.",
-                "image": "https://picsum.photos/400/300?random=1",
+                //"image": "https://picsum.photos/400/300?random=1",
                 "link": "#"
             },
             {
                 "title": "Framework Laravel",
                 "description": "Un projet de développement d'une application web avec Laravel.",
-                "image": "https://picsum.photos/400/300?random=2",
+                //"image": "https://picsum.photos/400/300?random=2",
                 "link": "#"
             },
             {
                 "title": "Certification RGPD",
                 "description": "Certification réalisée lors de ma première année de BTS",
-                "image": "https://picsum.photos/400/300?random=3",
+                //"image": "https://picsum.photos/400/300?random=3",
                 "link": "#"
             }
         ],
