@@ -14,19 +14,19 @@
         {
             "title": "Site Web Personnel",
             "description": "Un portfolio simple en HTML/CSS/JS pour présenter mes travaux.",
-            "image": "images/portfolio.jpg",
+            "image": "images/Laravel_1.png",
             "link": "#"
         },
         {
             "title": "Application de Gestion",
             "description": "Une app web pour gérer des tâches avec une base de données.",
-            "image": "images/gestion.jpg",
+            "image": "images/Laravel_2.png",
             "link": "#"
         },
         {
             "title": "GLPI",
             "description": "Création de tickets de support",
-            "image": "",
+            "image": "images/GLPI_1.png",
             "link": "#"
         }
     ],

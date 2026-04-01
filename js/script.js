@@ -114,13 +114,13 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 "title": "Site Web Personnel",
                 "description": "Un portfolio simple en HTML/CSS/JS pour présenter mes travaux.",
-                //"image": "https://picsum.photos/400/300?random=1",
+                "image": "images/Laravel_1.png",
                 "link": "#"
             },
             {
                 "title": "Framework Laravel",
                 "description": "Un projet de développement d'une application web avec Laravel.",
-                //"image": "https://picsum.photos/400/300?random=2",
+                "image": "images/Laravel_2.png",
                 "link": "#"
             },
             {
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 "title": "GLPI",
                 "description": "Création de tickets de support",
-                //"image": "https://picsum.photos/400/300?random=2",
+                "image": "images/GLPI_1.png",
                 "link": "#"
             }
         ],
