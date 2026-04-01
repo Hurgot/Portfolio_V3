@@ -84,15 +84,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 "link": "#"
             },
             {
-                "title": "Application de Gestion",
-                "description": "Une app web pour gérer des tâches avec une base de données.",
-                "image": "images/gestion.jpg",
+                "title": "Framework Laravel",
+                "description": "Un projet de développement d'une application web avec Laravel.",
+                //"image": "images/laravel.jpg",
                 "link": "#"
             },
             {
-                "title": "Framework Laravel",
-                "description": "Un projet de développement d'une application web avec Laravel.",
-                "image": "images/laravel.jpg",
+                "title": "Certification RGPD",
+                "description": "Certification réalisée lors de ma première année de BTS",
+                //"image": "images/nom-de-votre-image.jpg",
                 "link": "#"
             }
         ],
